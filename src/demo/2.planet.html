@@ -13,10 +13,10 @@
 
       @keyframes rotate {
         0% {
-          transform: rotate(45deg) scaleY(0.5) rotate(0);
+          transform:  rotate(45deg) scaleY(0.5) rotate(0);
         }
         100% {
-          transform: rotate(45deg) scaleY(0.5) rotate(360deg);
+          transform:  rotate(45deg) scaleY(0.5) rotate(360deg);
         }
       }
 
@@ -63,7 +63,9 @@
         position: absolute;
         top: -25px;
         left: 50%;
-        transform: translateX(-50%) rotateZ(-45deg) scaleY(2);
+        /* transform: translateX(-50%); */
+        transform: translateX(-50%) scaleY(2) rotateZ(-45deg);
+        /* transform: translateX(-50%) rotateZ(-45deg) scaleY(2); */
         animation: self-rotate 20s linear infinite;
       }
     </style>
